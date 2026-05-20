@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Simonz Tours and Trevel to request a car hire quote, ask about availability, or arrange tours, airport transfers, and chauffeur service.">
+  <title>Simonz Tours and Trevel | Contact</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Simonz Tours and Trevel home">
+      <span class="brand-mark">S</span>
+      <span>Simonz Tours and Trevel</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <div>
+        <p class="eyebrow">Contact us</p>
+        <h1>Request a quote or ask about availability.</h1>
+        <p>Send your travel dates, pickup point, and preferred vehicle type. We will help you plan the trip with a driver.</p>
+      </div>
+    </section>
+
+    <section class="section contact-layout">
+      <div class="contact-panel">
+        <p class="eyebrow">Reach us directly</p>
+        <h2>Simonz Tours and Trevel</h2>
+        <div class="contact-list">
+          <p><strong>Phone:</strong> +1 (555) 018-2045</p>
+          <p><strong>Email:</strong> bookings@simonztours.example</p>
+          <p><strong>Location:</strong> Your City, Main Road</p>
+          <p><strong>Hours:</strong> Monday to Saturday, 8:00 AM - 7:00 PM</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="service">Service needed</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Car hire with driver</option>
+            <option>Chauffeur service</option>
+            <option>Airport transfer</option>
+            <option>Tours and travel transport</option>
+            <option>Corporate transport</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Trip details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Travel dates, pickup location, vehicle type, or any special request"></textarea>
+        </div>
+        <button class="button primary" type="submit">Send Request</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Simonz Tours and Trevel</strong>
+      <p>Reliable car hire, tours, and travel transport.</p>
+    </div>
+    <p>&copy; <span id="year"></span> Simonz Tours and Trevel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
